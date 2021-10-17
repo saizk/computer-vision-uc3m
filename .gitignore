@@ -1,6 +1,8 @@
 *.idea
 *.pdf
 *.ipynb*
+*.pyc
 *.zip
+*.rar
 
 venv/
