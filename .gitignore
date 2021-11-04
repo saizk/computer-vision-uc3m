@@ -1,8 +1,10 @@
 *.idea
 *.pdf
-*.ipynb*
+*ipynb*
 *.pyc
 *.zip
 *.rar
 
 venv/
+Image-Classification-with-CNNs/data/images
+Image-Classification-with-CNNs/data/masks
