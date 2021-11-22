@@ -1,0 +1,274 @@
+Epoch: 1/25
+(TRAIN) Epoch: [0]  [233/234]  eta: 0:00:00  lr: 0.001000  loss: 0.6000 (1.3363)  loss_classifier: 0.0435 (0.2183)  loss_box_reg: 0.0282 (0.0764)  loss_objectness: 0.5372 (0.9285)  loss_rpn_box_reg: 0.0182 (0.1131)  time: 0.3059  data: 0.0025  max mem: 5385
+(TRAIN) Epoch: [0] Total time: 0:01:14 (0.3190 s / it)
+(VAL) Epoch: [0]  [67/68]  eta: 0:00:00  loss: 0.3448 (0.5051)  loss_classifier: 0.1085 (0.1246)  loss_box_reg: 0.0910 (0.1049)  loss_objectness: 0.1185 (0.2608)  loss_rpn_box_reg: 0.0097 (0.0147)  time: 0.1092  data: 0.0027  max mem: 5385
+(VAL) Epoch: [0] Total time: 0:00:08 (0.1190 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.157198905944824s
+Objectness-RPN. F1: 0.3756683334816954.     Precision: 0.7090909090909091. Recall: 0.25551995635032654
+Global classification: F1: 0.45098039215686275.     Precision: 0.4107142857142857. Recall: 0.5
+
+Epoch: 2/25
+(TRAIN) Epoch: [1]  [233/234]  eta: 0:00:00  lr: 0.001000  loss: 0.2557 (0.4950)  loss_classifier: 0.0839 (0.0636)  loss_box_reg: 0.0655 (0.0544)  loss_objectness: 0.0858 (0.3185)  loss_rpn_box_reg: 0.0113 (0.0585)  time: 0.2991  data: 0.0029  max mem: 5443
+(TRAIN) Epoch: [1] Total time: 0:01:12 (0.3088 s / it)
+(VAL) Epoch: [1]  [67/68]  eta: 0:00:00  loss: 0.3084 (0.4764)  loss_classifier: 0.0645 (0.0901)  loss_box_reg: 0.0558 (0.0811)  loss_objectness: 0.1184 (0.2830)  loss_rpn_box_reg: 0.0120 (0.0222)  time: 0.1100  data: 0.0033  max mem: 5443
+(VAL) Epoch: [1] Total time: 0:00:08 (0.1195 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.904906511306763s
+Objectness-RPN. F1: 0.4743376013488613.     Precision: 0.4666666666666667. Recall: 0.4822649359703064
+Global classification: F1: 0.6154266958424508.     Precision: 0.6793478260869565. Recall: 0.5625
+
+Epoch: 3/25
+(TRAIN) Epoch: [2]  [233/234]  eta: 0:00:00  lr: 0.001000  loss: 0.3903 (0.4439)  loss_classifier: 0.0604 (0.0547)  loss_box_reg: 0.0393 (0.0452)  loss_objectness: 0.0838 (0.3005)  loss_rpn_box_reg: 0.0071 (0.0434)  time: 0.3009  data: 0.0028  max mem: 5443
+(TRAIN) Epoch: [2] Total time: 0:01:12 (0.3088 s / it)
+(VAL) Epoch: [2]  [67/68]  eta: 0:00:00  loss: 0.2537 (0.4167)  loss_classifier: 0.0692 (0.0831)  loss_box_reg: 0.0455 (0.0680)  loss_objectness: 0.1019 (0.2488)  loss_rpn_box_reg: 0.0096 (0.0168)  time: 0.1095  data: 0.0027  max mem: 5443
+(VAL) Epoch: [2] Total time: 0:00:08 (0.1187 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.181744575500488s
+Objectness-RPN. F1: 0.535836716012551.     Precision: 0.48044692737430167. Recall: 0.6056623458862305
+Global classification: F1: 0.8699805464163819.     Precision: 0.915530303030303. Recall: 0.8287483912483913
+
+Epoch: 4/25
+(TRAIN) Epoch: [3]  [233/234]  eta: 0:00:00  lr: 0.001000  loss: 0.1735 (0.3158)  loss_classifier: 0.0002 (0.0460)  loss_box_reg: 0.0000 (0.0409)  loss_objectness: 0.0812 (0.1774)  loss_rpn_box_reg: 0.0839 (0.0516)  time: 0.3005  data: 0.0025  max mem: 5443
+(TRAIN) Epoch: [3] Total time: 0:01:12 (0.3084 s / it)
+(VAL) Epoch: [3]  [67/68]  eta: 0:00:00  loss: 0.2098 (0.3207)  loss_classifier: 0.0615 (0.1028)  loss_box_reg: 0.0446 (0.0846)  loss_objectness: 0.0460 (0.1179)  loss_rpn_box_reg: 0.0095 (0.0154)  time: 0.1099  data: 0.0031  max mem: 5443
+(VAL) Epoch: [3] Total time: 0:00:08 (0.1193 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.17276406288147s
+Objectness-RPN. F1: 0.4646828021994006.     Precision: 0.33793103448275863. Recall: 0.7435897588729858
+Global classification: F1: 0.8701446793726423.     Precision: 0.9026709401709401. Recall: 0.8398809523809524
+
+Epoch: 5/25
+(TRAIN) Epoch: [4]  [233/234]  eta: 0:00:00  lr: 0.001000  loss: 0.1472 (0.2626)  loss_classifier: 0.0246 (0.0379)  loss_box_reg: 0.0138 (0.0354)  loss_objectness: 0.0324 (0.1350)  loss_rpn_box_reg: 0.0082 (0.0544)  time: 0.3073  data: 0.0028  max mem: 5443
+(TRAIN) Epoch: [4] Total time: 0:01:12 (0.3081 s / it)
+(VAL) Epoch: [4]  [67/68]  eta: 0:00:00  loss: 0.2265 (0.3654)  loss_classifier: 0.0766 (0.1104)  loss_box_reg: 0.0492 (0.0691)  loss_objectness: 0.0315 (0.1715)  loss_rpn_box_reg: 0.0113 (0.0144)  time: 0.1089  data: 0.0027  max mem: 5443
+(VAL) Epoch: [4] Total time: 0:00:08 (0.1189 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.276804447174072s
+Objectness-RPN. F1: 0.604530791152141.     Precision: 0.536144578313253. Recall: 0.6929131150245667
+Global classification: F1: 0.9128648130597404.     Precision: 0.9377203290246768. Recall: 0.8892929292929292
+
+Epoch: 6/25
+(TRAIN) Epoch: [5]  [233/234]  eta: 0:00:00  lr: 0.000100  loss: 0.0651 (0.1474)  loss_classifier: 0.0003 (0.0295)  loss_box_reg: 0.0000 (0.0260)  loss_objectness: 0.0407 (0.0801)  loss_rpn_box_reg: 0.0132 (0.0118)  time: 0.2937  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [5] Total time: 0:01:12 (0.3085 s / it)
+(VAL) Epoch: [5]  [67/68]  eta: 0:00:00  loss: 0.1673 (0.2943)  loss_classifier: 0.0661 (0.0921)  loss_box_reg: 0.0343 (0.0617)  loss_objectness: 0.0396 (0.1293)  loss_rpn_box_reg: 0.0101 (0.0111)  time: 0.1091  data: 0.0026  max mem: 5443
+(VAL) Epoch: [5] Total time: 0:00:08 (0.1187 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.137481689453125s
+Objectness-RPN. F1: 0.6324936227911663.     Precision: 0.5549132947976878. Recall: 0.7352920174598694
+Global classification: F1: 0.8935046467885551.     Precision: 0.8964285714285716. Recall: 0.8905997343497343
+
+Epoch: 7/25
+(TRAIN) Epoch: [6]  [233/234]  eta: 0:00:00  lr: 0.000100  loss: 0.0499 (0.1062)  loss_classifier: 0.0193 (0.0287)  loss_box_reg: 0.0073 (0.0251)  loss_objectness: 0.0188 (0.0402)  loss_rpn_box_reg: 0.0122 (0.0121)  time: 0.3085  data: 0.0028  max mem: 5443
+(TRAIN) Epoch: [6] Total time: 0:01:12 (0.3091 s / it)
+(VAL) Epoch: [6]  [67/68]  eta: 0:00:00  loss: 0.1556 (0.3017)  loss_classifier: 0.0739 (0.0914)  loss_box_reg: 0.0325 (0.0609)  loss_objectness: 0.0469 (0.1397)  loss_rpn_box_reg: 0.0095 (0.0097)  time: 0.1090  data: 0.0027  max mem: 5443
+(VAL) Epoch: [6] Total time: 0:00:08 (0.1185 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.165491580963135s
+Objectness-RPN. F1: 0.6333900539370431.     Precision: 0.5523255813953488. Recall: 0.7423433065414429
+Global classification: F1: 0.8880977279067096.     Precision: 0.8932649667405765. Recall: 0.8829899267399267
+
+Epoch: 8/25
+(TRAIN) Epoch: [7]  [233/234]  eta: 0:00:00  lr: 0.000100  loss: 0.0631 (0.0969)  loss_classifier: 0.0202 (0.0275)  loss_box_reg: 0.0085 (0.0237)  loss_objectness: 0.0195 (0.0307)  loss_rpn_box_reg: 0.0150 (0.0150)  time: 0.3053  data: 0.0029  max mem: 5443
+(TRAIN) Epoch: [7] Total time: 0:01:12 (0.3092 s / it)
+(VAL) Epoch: [7]  [67/68]  eta: 0:00:00  loss: 0.1557 (0.2730)  loss_classifier: 0.0705 (0.0914)  loss_box_reg: 0.0313 (0.0603)  loss_objectness: 0.0461 (0.1103)  loss_rpn_box_reg: 0.0095 (0.0110)  time: 0.1092  data: 0.0027  max mem: 5443
+(VAL) Epoch: [7] Total time: 0:00:08 (0.1193 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.13772964477539s
+Objectness-RPN. F1: 0.6599901172192694.     Precision: 0.5987261146496815. Recall: 0.7352207899093628
+Global classification: F1: 0.8923430974379359.     Precision: 0.9075396825396824. Recall: 0.8776470588235294
+
+Epoch: 9/25
+(TRAIN) Epoch: [8]  [233/234]  eta: 0:00:00  lr: 0.000100  loss: 0.0666 (0.0912)  loss_classifier: 0.0267 (0.0270)  loss_box_reg: 0.0149 (0.0231)  loss_objectness: 0.0182 (0.0242)  loss_rpn_box_reg: 0.0130 (0.0168)  time: 0.3059  data: 0.0028  max mem: 5443
+(TRAIN) Epoch: [8] Total time: 0:01:12 (0.3080 s / it)
+(VAL) Epoch: [8]  [67/68]  eta: 0:00:00  loss: 0.1383 (0.2751)  loss_classifier: 0.0734 (0.0944)  loss_box_reg: 0.0331 (0.0614)  loss_objectness: 0.0476 (0.1059)  loss_rpn_box_reg: 0.0107 (0.0133)  time: 0.1095  data: 0.0029  max mem: 5443
+(VAL) Epoch: [8] Total time: 0:00:08 (0.1184 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.155738592147827s
+Objectness-RPN. F1: 0.6562856690520421.     Precision: 0.6052631578947368. Recall: 0.7167022824287415
+Global classification: F1: 0.8776411245652823.     Precision: 0.8775584795321638. Recall: 0.8777237851662403
+
+Epoch: 10/25
+(TRAIN) Epoch: [9]  [233/234]  eta: 0:00:00  lr: 0.000100  loss: 0.0348 (0.0878)  loss_classifier: 0.0001 (0.0268)  loss_box_reg: 0.0000 (0.0225)  loss_objectness: 0.0094 (0.0217)  loss_rpn_box_reg: 0.0114 (0.0168)  time: 0.3080  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [9] Total time: 0:01:13 (0.3139 s / it)
+(VAL) Epoch: [9]  [67/68]  eta: 0:00:00  loss: 0.1323 (0.2587)  loss_classifier: 0.0592 (0.0925)  loss_box_reg: 0.0334 (0.0609)  loss_objectness: 0.0403 (0.0946)  loss_rpn_box_reg: 0.0087 (0.0106)  time: 0.1093  data: 0.0027  max mem: 5443
+(VAL) Epoch: [9] Total time: 0:00:08 (0.1192 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.179884672164917s
+Objectness-RPN. F1: 0.6376063979982779.     Precision: 0.562874251497006. Recall: 0.7352207899093628
+Global classification: F1: 0.9080759421932559.     Precision: 0.91875. Recall: 0.8976470588235295
+
+Epoch: 11/25
+(TRAIN) Epoch: [10]  [233/234]  eta: 0:00:00  lr: 0.000010  loss: 0.0355 (0.0758)  loss_classifier: 0.0060 (0.0257)  loss_box_reg: 0.0043 (0.0220)  loss_objectness: 0.0064 (0.0208)  loss_rpn_box_reg: 0.0039 (0.0072)  time: 0.3036  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [10] Total time: 0:01:12 (0.3085 s / it)
+(VAL) Epoch: [10]  [67/68]  eta: 0:00:00  loss: 0.1365 (0.2630)  loss_classifier: 0.0604 (0.0931)  loss_box_reg: 0.0333 (0.0612)  loss_objectness: 0.0422 (0.1001)  loss_rpn_box_reg: 0.0074 (0.0086)  time: 0.1091  data: 0.0026  max mem: 5443
+(VAL) Epoch: [10] Total time: 0:00:08 (0.1191 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.142405986785889s
+Objectness-RPN. F1: 0.6476387357215548.     Precision: 0.5757575757575758. Recall: 0.7400285005569458
+Global classification: F1: 0.9087044553814893.     Precision: 0.9198170731707316. Recall: 0.8978571428571429
+
+Epoch: 12/25
+(TRAIN) Epoch: [11]  [233/234]  eta: 0:00:00  lr: 0.000010  loss: 0.0381 (0.0740)  loss_classifier: 0.0103 (0.0252)  loss_box_reg: 0.0065 (0.0219)  loss_objectness: 0.0106 (0.0202)  loss_rpn_box_reg: 0.0037 (0.0067)  time: 0.3048  data: 0.0030  max mem: 5443
+(TRAIN) Epoch: [11] Total time: 0:01:12 (0.3089 s / it)
+(VAL) Epoch: [11]  [67/68]  eta: 0:00:00  loss: 0.1368 (0.2666)  loss_classifier: 0.0605 (0.0948)  loss_box_reg: 0.0336 (0.0605)  loss_objectness: 0.0411 (0.1027)  loss_rpn_box_reg: 0.0071 (0.0087)  time: 0.1093  data: 0.0027  max mem: 5443
+(VAL) Epoch: [11] Total time: 0:00:08 (0.1194 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.108877182006836s
+Objectness-RPN. F1: 0.6563682819514023.     Precision: 0.5853658536585366. Recall: 0.7469729781150818
+Global classification: F1: 0.9089013961377246.     Precision: 0.9198170731707316. Recall: 0.8982417582417583
+
+Epoch: 13/25
+(TRAIN) Epoch: [12]  [233/234]  eta: 0:00:00  lr: 0.000010  loss: 0.0272 (0.0735)  loss_classifier: 0.0001 (0.0255)  loss_box_reg: 0.0000 (0.0219)  loss_objectness: 0.0129 (0.0194)  loss_rpn_box_reg: 0.0048 (0.0066)  time: 0.3069  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [12] Total time: 0:01:12 (0.3086 s / it)
+(VAL) Epoch: [12]  [67/68]  eta: 0:00:00  loss: 0.1563 (0.2714)  loss_classifier: 0.0603 (0.0951)  loss_box_reg: 0.0337 (0.0606)  loss_objectness: 0.0437 (0.1069)  loss_rpn_box_reg: 0.0069 (0.0086)  time: 0.1090  data: 0.0027  max mem: 5443
+(VAL) Epoch: [12] Total time: 0:00:08 (0.1187 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.101269483566284s
+Objectness-RPN. F1: 0.6541320759780741.     Precision: 0.5818181818181818. Recall: 0.7469729781150818
+Global classification: F1: 0.9089013961377246.     Precision: 0.9198170731707316. Recall: 0.8982417582417583
+
+Epoch: 14/25
+(TRAIN) Epoch: [13]  [233/234]  eta: 0:00:00  lr: 0.000010  loss: 0.0137 (0.0732)  loss_classifier: 0.0001 (0.0255)  loss_box_reg: 0.0000 (0.0218)  loss_objectness: 0.0067 (0.0194)  loss_rpn_box_reg: 0.0030 (0.0066)  time: 0.3013  data: 0.0028  max mem: 5443
+(TRAIN) Epoch: [13] Total time: 0:01:12 (0.3083 s / it)
+(VAL) Epoch: [13]  [67/68]  eta: 0:00:00  loss: 0.1368 (0.2734)  loss_classifier: 0.0605 (0.0962)  loss_box_reg: 0.0338 (0.0608)  loss_objectness: 0.0408 (0.1075)  loss_rpn_box_reg: 0.0075 (0.0088)  time: 0.1092  data: 0.0028  max mem: 5443
+(VAL) Epoch: [13] Total time: 0:00:08 (0.1191 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.133575677871704s
+Objectness-RPN. F1: 0.6541320759780741.     Precision: 0.5818181818181818. Recall: 0.7469729781150818
+Global classification: F1: 0.9089013961377246.     Precision: 0.9198170731707316. Recall: 0.8982417582417583
+
+Epoch: 15/25
+(TRAIN) Epoch: [14]  [233/234]  eta: 0:00:00  lr: 0.000010  loss: 0.0377 (0.0738)  loss_classifier: 0.0147 (0.0258)  loss_box_reg: 0.0086 (0.0217)  loss_objectness: 0.0074 (0.0196)  loss_rpn_box_reg: 0.0034 (0.0067)  time: 0.3119  data: 0.0028  max mem: 5443
+(TRAIN) Epoch: [14] Total time: 0:01:12 (0.3086 s / it)
+(VAL) Epoch: [14]  [67/68]  eta: 0:00:00  loss: 0.1330 (0.2685)  loss_classifier: 0.0607 (0.0944)  loss_box_reg: 0.0338 (0.0607)  loss_objectness: 0.0340 (0.1045)  loss_rpn_box_reg: 0.0073 (0.0088)  time: 0.1094  data: 0.0028  max mem: 5443
+(VAL) Epoch: [14] Total time: 0:00:08 (0.1199 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.12646770477295s
+Objectness-RPN. F1: 0.657430723676888.     Precision: 0.5900621118012422. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 16/25
+(TRAIN) Epoch: [15]  [233/234]  eta: 0:00:00  lr: 0.000001  loss: 0.0071 (0.0724)  loss_classifier: 0.0001 (0.0253)  loss_box_reg: 0.0000 (0.0217)  loss_objectness: 0.0041 (0.0195)  loss_rpn_box_reg: 0.0017 (0.0059)  time: 0.3048  data: 0.0025  max mem: 5443
+(TRAIN) Epoch: [15] Total time: 0:01:12 (0.3083 s / it)
+(VAL) Epoch: [15]  [67/68]  eta: 0:00:00  loss: 0.1270 (0.2655)  loss_classifier: 0.0608 (0.0938)  loss_box_reg: 0.0339 (0.0605)  loss_objectness: 0.0353 (0.1027)  loss_rpn_box_reg: 0.0069 (0.0085)  time: 0.1095  data: 0.0028  max mem: 5443
+(VAL) Epoch: [15] Total time: 0:00:08 (0.1196 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.090534687042236s
+Objectness-RPN. F1: 0.657430723676888.     Precision: 0.5900621118012422. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 17/25
+(TRAIN) Epoch: [16]  [233/234]  eta: 0:00:00  lr: 0.000001  loss: 0.0529 (0.0720)  loss_classifier: 0.0192 (0.0255)  loss_box_reg: 0.0122 (0.0217)  loss_objectness: 0.0093 (0.0190)  loss_rpn_box_reg: 0.0034 (0.0059)  time: 0.3069  data: 0.0029  max mem: 5443
+(TRAIN) Epoch: [16] Total time: 0:01:12 (0.3082 s / it)
+(VAL) Epoch: [16]  [67/68]  eta: 0:00:00  loss: 0.1319 (0.2719)  loss_classifier: 0.0608 (0.0955)  loss_box_reg: 0.0339 (0.0607)  loss_objectness: 0.0351 (0.1073)  loss_rpn_box_reg: 0.0077 (0.0085)  time: 0.1095  data: 0.0029  max mem: 5443
+(VAL) Epoch: [16] Total time: 0:00:08 (0.1189 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.142139196395874s
+Objectness-RPN. F1: 0.657430723676888.     Precision: 0.5900621118012422. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 18/25
+(TRAIN) Epoch: [17]  [233/234]  eta: 0:00:00  lr: 0.000001  loss: 0.0107 (0.0718)  loss_classifier: 0.0001 (0.0261)  loss_box_reg: 0.0000 (0.0216)  loss_objectness: 0.0072 (0.0183)  loss_rpn_box_reg: 0.0030 (0.0059)  time: 0.3047  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [17] Total time: 0:01:12 (0.3087 s / it)
+(VAL) Epoch: [17]  [67/68]  eta: 0:00:00  loss: 0.1503 (0.2708)  loss_classifier: 0.0604 (0.0950)  loss_box_reg: 0.0339 (0.0609)  loss_objectness: 0.0469 (0.1065)  loss_rpn_box_reg: 0.0077 (0.0085)  time: 0.1094  data: 0.0027  max mem: 5443
+(VAL) Epoch: [17] Total time: 0:00:08 (0.1188 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.110061883926392s
+Objectness-RPN. F1: 0.6551637511555771.     Precision: 0.5864197530864198. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 19/25
+(TRAIN) Epoch: [18]  [233/234]  eta: 0:00:00  lr: 0.000001  loss: 0.0640 (0.0726)  loss_classifier: 0.0306 (0.0259)  loss_box_reg: 0.0150 (0.0217)  loss_objectness: 0.0074 (0.0191)  loss_rpn_box_reg: 0.0041 (0.0059)  time: 0.3064  data: 0.0028  max mem: 5443
+(TRAIN) Epoch: [18] Total time: 0:01:12 (0.3085 s / it)
+(VAL) Epoch: [18]  [67/68]  eta: 0:00:00  loss: 0.1361 (0.2683)  loss_classifier: 0.0609 (0.0948)  loss_box_reg: 0.0339 (0.0608)  loss_objectness: 0.0419 (0.1043)  loss_rpn_box_reg: 0.0070 (0.0085)  time: 0.1091  data: 0.0027  max mem: 5443
+(VAL) Epoch: [18] Total time: 0:00:08 (0.1195 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.148808002471924s
+Objectness-RPN. F1: 0.6551637511555771.     Precision: 0.5864197530864198. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 20/25
+(TRAIN) Epoch: [19]  [233/234]  eta: 0:00:00  lr: 0.000001  loss: 0.0476 (0.0718)  loss_classifier: 0.0176 (0.0256)  loss_box_reg: 0.0085 (0.0217)  loss_objectness: 0.0088 (0.0186)  loss_rpn_box_reg: 0.0036 (0.0059)  time: 0.3112  data: 0.0028  max mem: 5443
+(TRAIN) Epoch: [19] Total time: 0:01:12 (0.3087 s / it)
+(VAL) Epoch: [19]  [67/68]  eta: 0:00:00  loss: 0.1365 (0.2683)  loss_classifier: 0.0606 (0.0945)  loss_box_reg: 0.0339 (0.0607)  loss_objectness: 0.0431 (0.1046)  loss_rpn_box_reg: 0.0078 (0.0085)  time: 0.1092  data: 0.0028  max mem: 5443
+(VAL) Epoch: [19] Total time: 0:00:08 (0.1192 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.115813493728638s
+Objectness-RPN. F1: 0.6551637511555771.     Precision: 0.5864197530864198. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 21/25
+(TRAIN) Epoch: [20]  [233/234]  eta: 0:00:00  lr: 0.000000  loss: 0.0297 (0.0727)  loss_classifier: 0.0001 (0.0262)  loss_box_reg: 0.0000 (0.0217)  loss_objectness: 0.0069 (0.0190)  loss_rpn_box_reg: 0.0017 (0.0058)  time: 0.3030  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [20] Total time: 0:01:12 (0.3090 s / it)
+(VAL) Epoch: [20]  [67/68]  eta: 0:00:00  loss: 0.1346 (0.2691)  loss_classifier: 0.0602 (0.0945)  loss_box_reg: 0.0339 (0.0607)  loss_objectness: 0.0325 (0.1054)  loss_rpn_box_reg: 0.0078 (0.0086)  time: 0.1090  data: 0.0027  max mem: 5443
+(VAL) Epoch: [20] Total time: 0:00:08 (0.1194 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.15924882888794s
+Objectness-RPN. F1: 0.6551637511555771.     Precision: 0.5864197530864198. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 22/25
+(TRAIN) Epoch: [21]  [233/234]  eta: 0:00:00  lr: 0.000000  loss: 0.0448 (0.0721)  loss_classifier: 0.0110 (0.0257)  loss_box_reg: 0.0066 (0.0216)  loss_objectness: 0.0094 (0.0190)  loss_rpn_box_reg: 0.0022 (0.0059)  time: 0.3130  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [21] Total time: 0:01:12 (0.3090 s / it)
+(VAL) Epoch: [21]  [67/68]  eta: 0:00:00  loss: 0.1327 (0.2709)  loss_classifier: 0.0611 (0.0934)  loss_box_reg: 0.0339 (0.0607)  loss_objectness: 0.0357 (0.1083)  loss_rpn_box_reg: 0.0078 (0.0085)  time: 0.1097  data: 0.0029  max mem: 5443
+(VAL) Epoch: [21] Total time: 0:00:08 (0.1196 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.133152484893799s
+Objectness-RPN. F1: 0.6551637511555771.     Precision: 0.5864197530864198. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 23/25
+(TRAIN) Epoch: [22]  [233/234]  eta: 0:00:00  lr: 0.000000  loss: 0.0562 (0.0720)  loss_classifier: 0.0214 (0.0257)  loss_box_reg: 0.0101 (0.0216)  loss_objectness: 0.0093 (0.0187)  loss_rpn_box_reg: 0.0037 (0.0059)  time: 0.3104  data: 0.0031  max mem: 5443
+(TRAIN) Epoch: [22] Total time: 0:01:12 (0.3090 s / it)
+(VAL) Epoch: [22]  [67/68]  eta: 0:00:00  loss: 0.1453 (0.2695)  loss_classifier: 0.0601 (0.0946)  loss_box_reg: 0.0339 (0.0607)  loss_objectness: 0.0336 (0.1057)  loss_rpn_box_reg: 0.0078 (0.0085)  time: 0.1099  data: 0.0033  max mem: 5443
+(VAL) Epoch: [22] Total time: 0:00:08 (0.1186 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.209437131881714s
+Objectness-RPN. F1: 0.6551637511555771.     Precision: 0.5864197530864198. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 24/25
+(TRAIN) Epoch: [23]  [233/234]  eta: 0:00:00  lr: 0.000000  loss: 0.0501 (0.0728)  loss_classifier: 0.0176 (0.0260)  loss_box_reg: 0.0086 (0.0217)  loss_objectness: 0.0094 (0.0192)  loss_rpn_box_reg: 0.0022 (0.0059)  time: 0.2996  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [23] Total time: 0:01:12 (0.3088 s / it)
+(VAL) Epoch: [23]  [67/68]  eta: 0:00:00  loss: 0.1453 (0.2700)  loss_classifier: 0.0609 (0.0940)  loss_box_reg: 0.0339 (0.0607)  loss_objectness: 0.0383 (0.1068)  loss_rpn_box_reg: 0.0078 (0.0085)  time: 0.1093  data: 0.0028  max mem: 5443
+(VAL) Epoch: [23] Total time: 0:00:08 (0.1194 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.11912727355957s
+Objectness-RPN. F1: 0.6551637511555771.     Precision: 0.5864197530864198. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
+
+Epoch: 25/25
+(TRAIN) Epoch: [24]  [233/234]  eta: 0:00:00  lr: 0.000000  loss: 0.0399 (0.0723)  loss_classifier: 0.0170 (0.0257)  loss_box_reg: 0.0057 (0.0216)  loss_objectness: 0.0116 (0.0192)  loss_rpn_box_reg: 0.0026 (0.0058)  time: 0.2981  data: 0.0027  max mem: 5443
+(TRAIN) Epoch: [24] Total time: 0:01:12 (0.3086 s / it)
+(VAL) Epoch: [24]  [67/68]  eta: 0:00:00  loss: 0.1309 (0.2687)  loss_classifier: 0.0620 (0.0940)  loss_box_reg: 0.0339 (0.0607)  loss_objectness: 0.0328 (0.1055)  loss_rpn_box_reg: 0.0078 (0.0085)  time: 0.1091  data: 0.0027  max mem: 5443
+(VAL) Epoch: [24] Total time: 0:00:08 (0.1186 s / it)
+
+Evaluating...
+Evaluation complete in 0.0m 10.164318799972534s
+Objectness-RPN. F1: 0.6551637511555771.     Precision: 0.5864197530864198. Recall: 0.7421652674674988
+Global classification: F1: 0.9082727026496932.     Precision: 0.91875. Recall: 0.8980316742081449
