@@ -1,6 +1,5 @@
 *.idea
-*.pdf
-*ipynb*
+!Lab_*.pdf
 *.pyc
 *.zip
 *.rar

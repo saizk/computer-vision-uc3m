@@ -15,7 +15,6 @@ import time
 import numpy as np
 import skimage.exposure as exp
 import skimage.morphology as morph
-import matplotlib.pyplot as plt
 
 from skimage import io, filters, color, feature
 from sklearn.cluster import KMeans

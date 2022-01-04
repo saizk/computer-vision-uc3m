@@ -1,5 +1,5 @@
-scikit-learn>=1.0
-scikit-image>=0.18.3
-opencv-python>=4.5.3.56
-matplotlib>=3.4.3
+scikit-learn==1.0.1
+scikit-image==0.18.3
+opencv-python==4.5.3.56
+matplotlib==3.4.3
 jupyter==1.0.0
