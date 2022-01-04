@@ -89,26 +89,26 @@ def compute_radii(coords, n_scales, sigma, k):
     return radii
 
 
-def blob_detector(img, params):
+def blob_detector(img, n_scales=5, sigma=2, k=np.sqrt(2), min_distance=10, threshold=0.01, nms_3d=False):
     gray_img = color.rgb2gray(img)
 
     st = time.time()
-    filter_response = increase_log_filter_size(gray_img, params['n_scales'], params['sigma'], params['k'])
+    filter_response = increase_log_filter_size(gray_img, n_scales, sigma, k)
     print(f'Time for increasing LoG filter {time.time() - st}')
 
     st = time.time()
-    filter_response = downsample(gray_img, params['n_scales'], params['sigma'], params['k'])
+    filter_response = downsample(gray_img, n_scales, sigma, k)
     print(f'Time for downsampling {time.time() - st}')
 
-    if params['nms_3d']:
+    if nms_3d:
         nms_space = nms_2d(filter_response)
     else:
         nms_space = nms_3d(filter_response)
 
-    coords = compute_coords_by_scale(nms_space, params['n_scales'], params['min_distance'], params['threshold'])
+    coords = compute_coords_by_scale(nms_space, n_scales, min_distance, threshold)
     cx, cy = parse_coords(coords)
 
-    radii = compute_radii(coords, params['n_scales'], params['sigma'], params['k'])
+    radii = compute_radii(coords, n_scales, sigma, k)
 
     plot_circles(gray_img, cx, cy, radii)
 
@@ -124,7 +124,7 @@ def main(filename='sunflowers.jpg'):
         'nms_3d': True
     }
 
-    blob_detector(img, params)
+    blob_detector(img, **params)
 
 
 if __name__ == '__main__':
