@@ -4,7 +4,9 @@
 *.pyc
 *.zip
 *.rar
+*.tar.gz
 
 venv/
-Image-Classification-with-CNNs/data/images
-Image-Classification-with-CNNs/data/masks
+3-Image-Classification-with-CNNs/data/images
+3-Image-Classification-with-CNNs/data/masks
+6-Deep-Learning-for-ASR/data/LibriSpeech

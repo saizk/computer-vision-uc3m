@@ -1,0 +1,4 @@
+jupyter==1.0.0
+matplotlib>=3.4.3
+pydub
+PySoundFile>=0.9.0
