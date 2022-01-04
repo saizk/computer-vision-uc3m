@@ -1,6 +1,6 @@
+import time
 import math
 import sys
-import time
 import torch
 import utils
 
@@ -9,7 +9,7 @@ def train_one_epoch(model, optimizer, data_loader, device, weights, epoch, print
     model.train()
     metric_logger = utils.MetricLogger(delimiter="  ")
     metric_logger.add_meter('lr', utils.SmoothedValue(window_size=1, fmt='{value:.6f}'))
-    header = '(TRAIN) Epoch: [{}]'.format(epoch)
+    header = f'(TRAIN) Epoch: [{epoch}]'
     total_losses = {'classifier': 0, 'box_reg': 0, 'objectness': 0, 'rpn_box_reg': 0, 'total': 0}
     lr_scheduler = None
     if epoch == 0:

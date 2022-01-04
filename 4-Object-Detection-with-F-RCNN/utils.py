@@ -1,15 +1,14 @@
 from __future__ import print_function
 
-from collections import defaultdict, deque
+import os
+import time
+import errno
 import datetime
 import pickle
-import time
-
 import torch
 import torch.distributed as dist
 
-import errno
-import os
+from collections import defaultdict, deque
 
 
 class SmoothedValue(object):

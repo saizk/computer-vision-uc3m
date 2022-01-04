@@ -1,11 +1,7 @@
-import typing
-from typing import List, Tuple
-
 import numpy as np
-from typing import List
-
 import audio_features as af
 
+from typing import List, Tuple
 from dataclasses import dataclass
 from sklearn.base import BaseEstimator, TransformerMixin
 
@@ -147,8 +143,6 @@ class ExtractFeatures(CombineFeatures):
                 audio_functions.append((func, ff_params))
         return audio_functions
 
-
     @staticmethod
     def print_results(functions):
         print([(func.__name__, params) for func, params in functions])
-

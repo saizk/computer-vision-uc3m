@@ -327,6 +327,8 @@ def get_mfccs(x, sr, flen=1024, hop=256, n_mfcc=20):
     return mfcc_frames.T
 
 
+# ADDITIONAL FILTERS
+
 def get_rms(x, flen=1024, hop=256):
     S, phase = lbs.magphase(lbs.stft(x))
     rms = lbs.feature.rms(S=S, frame_length=flen, hop_length=hop)

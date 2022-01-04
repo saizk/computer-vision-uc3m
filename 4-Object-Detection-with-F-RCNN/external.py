@@ -5,11 +5,11 @@ Created on Mon Apr 20 09:22:39 2020
 
 @author: mmolina
 """
-import numpy as np
 import os
+import cv2
+import numpy as np
 import torch
 import torchvision.transforms.functional as F
-import cv2
 
 min_size = 800
 max_size = 1333

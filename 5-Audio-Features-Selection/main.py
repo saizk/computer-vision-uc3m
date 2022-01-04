@@ -8,10 +8,10 @@ Audio features
 
 # Generic imports
 import time
-from copy import deepcopy
 import numpy as np
 import matplotlib.pyplot as plt
 from os import listdir
+from copy import deepcopy
 # Import ML tools
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler

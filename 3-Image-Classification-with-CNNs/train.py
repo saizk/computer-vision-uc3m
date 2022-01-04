@@ -1,37 +1,32 @@
 from __future__ import print_function, division
-import os
-import torch
-import pandas as pd
 import gc
-
-from sklearn import metrics
-
-
+import time
+import random
+import copy
+import torch
+import warnings
 import numpy as np
 import matplotlib.pyplot as plt
-from torch.utils.data import Dataset, DataLoader
-from torchvision import transforms, utils, models
 import torchvision.models.detection as dmodels
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torch.optim import lr_scheduler
-import time
-import copy
-from PIL import Image
-import random
 import numpy.random as npr
+
+from sklearn import metrics
+from torch.utils.data import DataLoader
+from torchvision import models
+from torch.optim import lr_scheduler
+
+from dataset import IsicDataset
+from transforms import get_train_transform, get_test_transform
 
 random.seed(42)
 npr.seed(42)
 torch.manual_seed(42)
 torch.backends.cudnn.enabled = False
 
-# Ignore warnings
-import warnings
-
-warnings.filterwarnings("ignore")
-
+warnings.filterwarnings("ignore")  # Ignore warnings
 plt.ion()  # interactive mode
 
 
@@ -53,84 +48,6 @@ def computeAUCs(scores, labels):
     aucs[1] = metrics.roc_auc_score(labels_sk, scores_sk)
 
     return aucs
-
-
-class CropByMask(object):
-    """Crop the image using the lesion mask.
-
-    Args:
-        border (tuple or int): Border surrounding the mask. We dilate the mask as the skin surrounding
-        the lesion is important for dermatologists.
-        If it is a tuple, then it is (bordery,borderx)
-    """
-
-    def __init__(self, border):
-        assert isinstance(border, (int, tuple))
-        if isinstance(border, int):
-            self.border = (border, border)
-        else:
-            self.border = border
-
-    def __call__(self, image, mask):
-
-        h, w = image.size[:2]
-
-        # Calculamos los índices del bounding box para hacer el cropping
-        sidx = np.nonzero(mask)
-        minx = np.maximum(sidx[1].min() - self.border[1], 0)
-        maxx = np.minimum(sidx[1].max() + 1 + self.border[1], w)
-        miny = np.maximum(sidx[0].min() - self.border[0], 0)
-        maxy = np.minimum(sidx[0].max() + 1 + self.border[1], h)
-
-        image = image.crop([minx, maxy, maxx, miny])
-
-        return image
-
-
-class IsicDataset(Dataset):
-
-    def __init__(self, csv_file, img_dir, mask_dir, transform=None, max_size=2000):
-
-        self.dataset = pd.read_csv(csv_file, header=0, dtype={'id': str, 'label': int})
-
-        self.img_dir = img_dir
-        self.mask_dir = mask_dir
-
-        self.img_names = self.dataset.id
-        self.labels = self.dataset.label
-
-        if max_size > 0:
-            idx = np.random.RandomState(seed=42).permutation(range(len(self.dataset)))
-            reduced_dataset = self.dataset.iloc[idx[0: max_size]]
-            self.dataset = reduced_dataset.reset_index(drop=True)
-
-        self.transform = transform
-        self.classes = ['nevus', 'melanoma', 'keratosis']
-
-        self.img_files = [f'{img}.jpg' for img in self.img_names]
-        self.masks_files = [f'{mask}.png' for mask in self.img_names]
-
-    def __len__(self):
-        return len(self.dataset)
-
-    def __getitem__(self, idx):
-
-        img_path = os.path.join(self.img_dir, self.img_files[idx])
-        mask_path = os.path.join(self.mask_dir, self.masks_files[idx])
-
-        image = Image.open(img_path)
-
-        if self.transform:
-            if isinstance(self.transform.transforms[0], CropByMask):
-                tr_func = self.transform.transforms[0]
-                image = tr_func(image, mask=Image.open(mask_path))
-                self.transform.transforms.pop(0)
-
-            image = self.transform(image)
-
-        label = self.labels[idx].astype("int64")
-
-        return image, label
 
 
 def setup_datasets(dataset, transform_compose, max_size=2000):
@@ -385,24 +302,6 @@ class BaseNet(object):
             csv_writer.writerows(outputs)
 
 
-def get_data_transforms():
-    train_composed = transforms.Compose([
-        CropByMask((25, 25)),
-        transforms.CenterCrop(224),
-        transforms.Resize((256, 256)),
-        # transforms.RandomHorizontalFlip(),
-        transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]
-    )
-    test_composed = transforms.Compose([
-        transforms.Resize((256, 256)),
-        transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])]
-    )
-    return {'train': train_composed, 'val': train_composed, 'test': test_composed,
-            'dataset': IsicDataset}
-
-
 def gen_model_params(model, data_transforms, max_train_size):
     return {
         'model': model,
@@ -441,7 +340,9 @@ def gen_model(params, device):
 def main():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    data_transforms = get_data_transforms(mode='torch')
+    train_composed, test_composed = get_train_transform(), get_test_transform()
+    data_transforms = {'train': train_composed, 'val': train_composed, 'test': test_composed,
+                        'dataset': IsicDataset}
 
     detection_models = [dmodels.fasterrcnn_resnet50_fpn,
                         dmodels.maskrcnn_resnet50_fpn]
